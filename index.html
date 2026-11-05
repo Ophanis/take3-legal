@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Take3 — Privacidade e Suporte / Privacy and Support</title>
-<meta name="description" content="Política de Privacidade e suporte do app Take3. Privacy Policy and support for the Take3 app.">
+<title>Take3 — Privacy and Support</title>
+<meta name="description" content="Take3 privacy policy and support, in 9 languages.">
 <style>
   :root { color-scheme: light dark; --bg: #ffffff; --fg: #1c1c1e; --muted: #6b6b70; --line: #e4e4e8; --accent: #5b6cf0; }
   @media (prefers-color-scheme: dark) { :root { --bg: #0b0d12; --fg: #f2f2f5; --muted: #a0a0aa; --line: #23262f; --accent: #8b97ff; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "PingFang SC", "PingFang TC", "Apple SD Gothic Neo", Helvetica, Arial, sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
   h1 { font-size: 2rem; margin: 0 0 4px; }
   h2 { font-size: 1.4rem; margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--line); }
@@ -17,19 +17,23 @@
   ul { padding-left: 22px; }
   a { color: var(--accent); }
   .muted { color: var(--muted); font-size: .9rem; }
-  .lang { display: flex; gap: 16px; margin: 12px 0 8px; }
+  nav.langs { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 16px 0 8px; }
+  nav.langs a { text-decoration: none; padding: 2px 0; border-bottom: 2px solid transparent; }
+  nav.langs a.active { border-bottom-color: var(--accent); font-weight: 600; }
   .summary { background: color-mix(in srgb, var(--accent) 10%, transparent); border-radius: 12px; padding: 12px 16px; }
+  /* Com JavaScript só o idioma escolhido aparece; sem ele, todas as seções ficam visíveis. */
+  .js .lang-section { display: none; }
+  .js .lang-section.active { display: block; }
 </style>
 </head>
 <body>
 <main>
   <h1>Take3</h1>
-  <p class="muted">Privacidade e suporte · Privacy and support</p>
-  <nav class="lang"><a href="#pt">Português</a><a href="#en">English</a></nav>
+  <p class="muted">Privacy and support · Privacidade e suporte · プライバシーとサポート · 隐私与支持</p>
+  <nav class="langs" aria-label="Language"><a href="#pt-BR" data-lang="pt-BR">Português (Brasil)</a><a href="#en" data-lang="en">English</a><a href="#es" data-lang="es">Español</a><a href="#fr" data-lang="fr">Français</a><a href="#de" data-lang="de">Deutsch</a><a href="#ja" data-lang="ja">日本語</a><a href="#ko" data-lang="ko">한국어</a><a href="#zh-Hans" data-lang="zh-Hans">简体中文</a><a href="#zh-Hant" data-lang="zh-Hant">繁體中文</a></nav>
 
-  <!-- ===================== PORTUGUÊS ===================== -->
-  <section id="pt" lang="pt-BR">
-    <h2 id="privacidade">Política de Privacidade</h2>
+  <section class="lang-section" id="pt-BR" lang="pt-BR">
+    <h2>Política de Privacidade</h2>
     <p class="muted">Última atualização: 5 de novembro de 2026.</p>
     <p>O Take3 é um app de vlog por takes curtos. Esta página explica quais informações o app usa e como.</p>
     <p class="summary"><strong>Resumo:</strong> seus vídeos e projetos ficam no seu iPhone. O Take3 não tem conta, não usa anúncios, não rastreia você e não vende dados.</p>
@@ -61,18 +65,17 @@
     <h3>Mudanças nesta política</h3>
     <p>Se esta política mudar, publicaremos a nova versão aqui, com a data atualizada.</p>
 
-    <h2 id="suporte">Suporte</h2>
+    <h2>Suporte</h2>
     <p>Dúvidas, problemas ou sugestões: <a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a>.</p>
     <ul>
       <li><strong>Cancelar a assinatura:</strong> Ajustes do iPhone → seu nome → Assinaturas → Take3 Pro.</li>
-      <li><strong>Restaurar compras:</strong> no app, na tela do Take3 Pro, toque em "Restaurar".</li>
+      <li><strong>Restaurar compras:</strong> no app, na tela do Take3 Pro, toque em “Restaurar”.</li>
     </ul>
     <p class="muted">Termos de Uso: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrato padrão de licença da Apple</a>.</p>
   </section>
 
-  <!-- ===================== ENGLISH ===================== -->
-  <section id="en" lang="en">
-    <h2 id="privacy">Privacy Policy</h2>
+  <section class="lang-section" id="en" lang="en">
+    <h2>Privacy Policy</h2>
     <p class="muted">Last updated: November 5, 2026.</p>
     <p>Take3 is a vlogging app built around short takes. This page explains what information the app uses and how.</p>
     <p class="summary"><strong>Summary:</strong> your videos and projects stay on your iPhone. Take3 has no accounts, no ads, does not track you and does not sell data.</p>
@@ -104,14 +107,341 @@
     <h3>Changes to this policy</h3>
     <p>If this policy changes, we will publish the new version here with an updated date.</p>
 
-    <h2 id="support">Support</h2>
+    <h2>Support</h2>
     <p>Questions, problems or suggestions: <a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a>.</p>
     <ul>
       <li><strong>Cancel your subscription:</strong> iPhone Settings → your name → Subscriptions → Take3 Pro.</li>
-      <li><strong>Restore purchases:</strong> in the app, on the Take3 Pro screen, tap "Restore".</li>
+      <li><strong>Restore purchases:</strong> in the app, on the Take3 Pro screen, tap “Restore”.</li>
     </ul>
     <p class="muted">Terms of Use: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard license agreement</a>.</p>
   </section>
+
+  <section class="lang-section" id="es" lang="es">
+    <h2>Política de privacidad</h2>
+    <p class="muted">Última actualización: 5 de noviembre de 2026.</p>
+    <p>Take3 es una app de vlog basada en takes cortos. Esta página explica qué información usa la app y cómo.</p>
+    <p class="summary"><strong>Resumen:</strong> tus vídeos y proyectos se quedan en tu iPhone. Take3 no tiene cuentas, no usa anuncios, no te rastrea y no vende datos.</p>
+
+    <h3>Qué se queda en tu dispositivo</h3>
+    <p>Los takes (vídeos), las miniaturas, los proyectos, las pistas de audio, los textos, los filtros y los ajustes se almacenan únicamente en tu iPhone. No subimos este contenido a ningún servidor nuestro y no tenemos acceso a él. Al eliminar la app se eliminan estos datos. Si usas la copia de seguridad del iPhone de Apple, se rige por las normas de Apple.</p>
+
+    <h3>Permisos que solicita la app</h3>
+    <ul>
+      <li><strong>Cámara y micrófono:</strong> para grabar tus takes con sonido.</li>
+      <li><strong>Fotos:</strong> para importar vídeos de tu biblioteca (función Pro).</li>
+      <li><strong>Ubicación (mientras usas la app):</strong> para guardar dónde se grabó un take. La ubicación se guarda junto con el take, en tu dispositivo, y no se nos envía.</li>
+      <li><strong>Notificaciones:</strong> recordatorios y avisos programados en el propio dispositivo, como el recordatorio diario de grabación, los takes a punto de caducar y el fin de la prueba gratuita. No usamos notificaciones enviadas desde un servidor.</li>
+    </ul>
+    <p>Puedes revocar cualquier permiso en cualquier momento en Ajustes del iPhone.</p>
+
+    <h3>Suscripción Take3 Pro</h3>
+    <p>Las compras las realiza y cobra Apple a través de la App Store. Usamos RevenueCat, un servicio de terceros, para confirmar si tu suscripción está activa. RevenueCat recibe información de la compra, como el estado y el historial de la suscripción, vinculada a un identificador anónimo generado por la app, sin tu nombre ni tu correo electrónico. Consulta la política de RevenueCat en <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>. No tenemos acceso a tus datos de pago.</p>
+
+    <h3>Lo que no hacemos</h3>
+    <p>Sin anuncios, sin rastreo entre apps o sitios web, sin herramientas de análisis de uso y sin venta ni cesión de datos con fines publicitarios.</p>
+
+    <h3>Menores</h3>
+    <p>Take3 no está dirigida a menores de 13 años y no recopila sus datos de forma intencionada.</p>
+
+    <h3>Tus datos y su eliminación</h3>
+    <p>Como tu contenido se queda en tu dispositivo, lo controlas tú: puedes eliminar takes y proyectos en la app o eliminar la propia app. Si tienes dudas sobre los datos de compra, escribe al correo de soporte indicado abajo.</p>
+
+    <h3>Cambios en esta política</h3>
+    <p>Si esta política cambia, publicaremos aquí la nueva versión con la fecha actualizada.</p>
+
+    <h2>Soporte</h2>
+    <p>Preguntas, problemas o sugerencias: <a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a>.</p>
+    <ul>
+      <li><strong>Cancelar la suscripción:</strong> Ajustes del iPhone → tu nombre → Suscripciones → Take3 Pro.</li>
+      <li><strong>Restaurar compras:</strong> en la app, en la pantalla de Take3 Pro, toca «Restaurar».</li>
+    </ul>
+    <p class="muted">Términos de uso: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrato de licencia estándar de Apple</a>.</p>
+  </section>
+
+  <section class="lang-section" id="fr" lang="fr">
+    <h2>Politique de confidentialité</h2>
+    <p class="muted">Dernière mise à jour : 5 novembre 2026.</p>
+    <p>Take3 est une app de vlog fondée sur de courts takes. Cette page explique quelles informations l'app utilise et comment.</p>
+    <p class="summary"><strong>En bref :</strong> vos vidéos et vos projets restent sur votre iPhone. Take3 n'a pas de compte, n'affiche pas de publicités, ne vous suit pas et ne vend pas de données.</p>
+
+    <h3>Ce qui reste sur votre appareil</h3>
+    <p>Les takes (vidéos), les miniatures, les projets, les pistes audio, les textes, les filtres et les réglages sont stockés uniquement sur votre iPhone. Nous n'envoyons ce contenu à aucun de nos serveurs et nous n'y avons pas accès. Supprimer l'app supprime ces données. Si vous utilisez la sauvegarde de l'iPhone d'Apple, elle suit les règles d'Apple.</p>
+
+    <h3>Autorisations demandées par l'app</h3>
+    <ul>
+      <li><strong>Appareil photo et micro :</strong> pour enregistrer vos takes avec le son.</li>
+      <li><strong>Photos :</strong> pour importer des vidéos depuis votre photothèque (fonction Pro).</li>
+      <li><strong>Localisation (pendant l'utilisation de l'app) :</strong> pour enregistrer l'endroit où un take a été filmé. La position est conservée avec le take, sur votre appareil, et ne nous est pas envoyée.</li>
+      <li><strong>Notifications :</strong> rappels et alertes programmés sur l'appareil lui-même, comme le rappel quotidien d'enregistrement, les takes sur le point d'expirer et la fin de l'essai gratuit. Nous n'utilisons pas de notifications envoyées par un serveur.</li>
+    </ul>
+    <p>Vous pouvez retirer n'importe quelle autorisation à tout moment dans les Réglages de l'iPhone.</p>
+
+    <h3>Abonnement Take3 Pro</h3>
+    <p>Les achats sont effectués et facturés par Apple via l'App Store. Nous utilisons RevenueCat, un service tiers, pour vérifier que votre abonnement est actif. RevenueCat reçoit des informations d'achat, comme l'état et l'historique de l'abonnement, associées à un identifiant anonyme généré par l'app, sans votre nom ni votre e-mail. Consultez la politique de RevenueCat sur <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>. Nous n'avons pas accès à vos données de paiement.</p>
+
+    <h3>Ce que nous ne faisons pas</h3>
+    <p>Pas de publicités, pas de suivi entre apps ou sites web, pas d'outils d'analyse d'usage, et aucune vente ni partage de données à des fins publicitaires.</p>
+
+    <h3>Enfants</h3>
+    <p>Take3 ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment leurs données.</p>
+
+    <h3>Vos données et leur suppression</h3>
+    <p>Comme votre contenu reste sur votre appareil, vous le contrôlez : vous pouvez supprimer des takes et des projets dans l'app, ou supprimer l'app elle-même. Pour toute question sur les données d'achat, écrivez à l'adresse d'assistance ci-dessous.</p>
+
+    <h3>Modifications de cette politique</h3>
+    <p>Si cette politique change, nous publierons ici la nouvelle version avec la date mise à jour.</p>
+
+    <h2>Assistance</h2>
+    <p>Questions, problèmes ou suggestions : <a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a>.</p>
+    <ul>
+      <li><strong>Résilier l'abonnement :</strong> Réglages de l'iPhone → votre nom → Abonnements → Take3 Pro.</li>
+      <li><strong>Restaurer les achats :</strong> dans l'app, sur l'écran Take3 Pro, touchez « Restaurer ».</li>
+    </ul>
+    <p class="muted">Conditions d'utilisation : <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrat de licence standard d'Apple</a>.</p>
+  </section>
+
+  <section class="lang-section" id="de" lang="de">
+    <h2>Datenschutzerklärung</h2>
+    <p class="muted">Zuletzt aktualisiert: 5. November 2026.</p>
+    <p>Take3 ist eine Vlog-App rund um kurze Takes. Diese Seite erklärt, welche Informationen die App verwendet und wie.</p>
+    <p class="summary"><strong>Kurz gesagt:</strong> Deine Videos und Projekte bleiben auf deinem iPhone. Take3 hat keine Konten, zeigt keine Werbung, verfolgt dich nicht und verkauft keine Daten.</p>
+
+    <h3>Was auf deinem Gerät bleibt</h3>
+    <p>Takes (Videos), Vorschaubilder, Projekte, Audiospuren, Texte, Filter und Einstellungen werden ausschließlich auf deinem iPhone gespeichert. Wir laden diese Inhalte auf keinen unserer Server hoch und haben keinen Zugriff darauf. Wenn du die App löschst, werden diese Daten gelöscht. Wenn du die iPhone-Sicherung von Apple nutzt, gelten dafür die Regeln von Apple.</p>
+
+    <h3>Berechtigungen, die die App anfragt</h3>
+    <ul>
+      <li><strong>Kamera und Mikrofon:</strong> um deine Takes mit Ton aufzunehmen.</li>
+      <li><strong>Fotos:</strong> um Videos aus deiner Mediathek zu importieren (Pro-Funktion).</li>
+      <li><strong>Standort (bei Nutzung der App):</strong> um zu speichern, wo ein Take aufgenommen wurde. Der Standort wird zusammen mit dem Take auf deinem Gerät gespeichert und nicht an uns gesendet.</li>
+      <li><strong>Mitteilungen:</strong> Erinnerungen und Hinweise, die auf dem Gerät selbst geplant werden, etwa die tägliche Aufnahmeerinnerung, bald ablaufende Takes und das Ende der kostenlosen Testphase. Wir verwenden keine vom Server gesendeten Mitteilungen.</li>
+    </ul>
+    <p>Du kannst jede Berechtigung jederzeit in den iPhone-Einstellungen widerrufen.</p>
+
+    <h3>Take3-Pro-Abonnement</h3>
+    <p>Käufe werden von Apple über den App Store abgewickelt und abgerechnet. Wir nutzen RevenueCat, einen Drittanbieter-Dienst, um zu prüfen, ob dein Abonnement aktiv ist. RevenueCat erhält Kaufinformationen wie den Status und den Verlauf des Abonnements, verknüpft mit einer anonymen Kennung, die von der App erzeugt wird – ohne deinen Namen oder deine E-Mail-Adresse. Die Datenschutzerklärung von RevenueCat findest du unter <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>. Wir haben keinen Zugriff auf deine Zahlungsdaten.</p>
+
+    <h3>Was wir nicht tun</h3>
+    <p>Keine Werbung, kein Tracking über Apps oder Websites hinweg, keine Tools zur Nutzungsanalyse und kein Verkauf oder keine Weitergabe von Daten für Werbezwecke.</p>
+
+    <h3>Kinder</h3>
+    <p>Take3 richtet sich nicht an Kinder unter 13 Jahren und erfasst wissentlich keine Daten von ihnen.</p>
+
+    <h3>Deine Daten und deren Löschung</h3>
+    <p>Da deine Inhalte auf deinem Gerät bleiben, hast du die Kontrolle: Du kannst Takes und Projekte in der App löschen oder die App selbst löschen. Bei Fragen zu Kaufdaten schreib an die unten angegebene Support-E-Mail-Adresse.</p>
+
+    <h3>Änderungen dieser Erklärung</h3>
+    <p>Wenn sich diese Erklärung ändert, veröffentlichen wir hier die neue Fassung mit aktualisiertem Datum.</p>
+
+    <h2>Support</h2>
+    <p>Fragen, Probleme oder Vorschläge: <a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a>.</p>
+    <ul>
+      <li><strong>Abonnement kündigen:</strong> iPhone-Einstellungen → dein Name → Abonnements → Take3 Pro.</li>
+      <li><strong>Käufe wiederherstellen:</strong> in der App auf dem Take3-Pro-Bildschirm „Wiederherstellen“ antippen.</li>
+    </ul>
+    <p class="muted">Nutzungsbedingungen: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard-Lizenzvertrag von Apple</a>.</p>
+  </section>
+
+  <section class="lang-section" id="ja" lang="ja">
+    <h2>プライバシーポリシー</h2>
+    <p class="muted">最終更新日：2026年11月5日</p>
+    <p>Take3は、短いテイクで作るVlogアプリです。このページでは、アプリがどのような情報をどのように使うかを説明します。</p>
+    <p class="summary"><strong>要約：</strong> 動画とプロジェクトはお使いのiPhoneに保存されます。Take3にはアカウントがなく、広告も表示せず、ユーザーを追跡せず、データを販売することもありません。</p>
+
+    <h3>端末に保存されるもの</h3>
+    <p>テイク（動画）、サムネイル、プロジェクト、オーディオトラック、テキスト、フィルタ、設定は、お使いのiPhoneにのみ保存されます。これらの内容を当方のサーバーにアップロードすることはなく、当方がアクセスすることもできません。アプリを削除すると、これらのデータも削除されます。Appleのバックアップを使用している場合、そのバックアップにはAppleの規則が適用されます。</p>
+
+    <h3>アプリが求める許可</h3>
+    <ul>
+      <li><strong>カメラとマイク：</strong>テイクを音声付きで録画するため。</li>
+      <li><strong>写真：</strong>ライブラリから動画を読み込むため（Pro機能）。</li>
+      <li><strong>位置情報（App使用中）：</strong>テイクを撮影した場所を保存するため。位置情報はテイクとともにお使いの端末に保存され、当方には送信されません。</li>
+      <li><strong>通知：</strong>端末自体でスケジュールされるリマインダーと通知（毎日の録画リマインダー、まもなく期限切れになるテイク、無料トライアルの終了など）。サーバーから送信される通知は使用しません。</li>
+    </ul>
+    <p>許可はいつでもiPhoneの設定で取り消せます。</p>
+
+    <h3>Take3 Proサブスクリプション</h3>
+    <p>購入はAppleがApp Store経由で行い、請求もAppleが行います。サブスクリプションが有効かどうかを確認するために、第三者サービスのRevenueCatを使用しています。RevenueCatは、サブスクリプションの状態や履歴などの購入情報を、アプリが生成した匿名の識別子に関連付けて受け取ります。氏名やメールアドレスは含まれません。RevenueCatのポリシーは<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>をご覧ください。お支払い情報に当方がアクセスすることはありません。</p>
+
+    <h3>行わないこと</h3>
+    <p>広告なし、アプリやWebサイトをまたぐトラッキングなし、利用状況の分析ツールなし、広告目的のデータ販売・共有なし。</p>
+
+    <h3>お子様について</h3>
+    <p>Take3は13歳未満のお子様を対象としておらず、お子様のデータを意図的に収集することはありません。</p>
+
+    <h3>データと削除</h3>
+    <p>コンテンツはお使いの端末に保存されるため、管理はご自身で行えます。アプリ内でテイクやプロジェクトを削除するか、アプリ自体を削除できます。購入データについてのご質問は、下記のサポート用メールアドレスまでご連絡ください。</p>
+
+    <h3>本ポリシーの変更</h3>
+    <p>本ポリシーを変更した場合は、更新日を改めた新しい版をこのページに掲載します。</p>
+
+    <h2>サポート</h2>
+    <p>ご質問、問題、ご提案：<a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a></p>
+    <ul>
+      <li><strong>サブスクリプションの解約：</strong>iPhoneの設定 → ご自身の名前 → サブスクリプション → Take3 Pro。</li>
+      <li><strong>購入の復元：</strong>アプリのTake3 Pro画面で「復元」をタップします。</li>
+    </ul>
+    <p class="muted">利用規約：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Appleの標準使用許諾契約</a></p>
+  </section>
+
+  <section class="lang-section" id="ko" lang="ko">
+    <h2>개인정보 처리방침</h2>
+    <p class="muted">최종 업데이트: 2026년 11월 5일</p>
+    <p>Take3는 짧은 테이크로 만드는 브이로그 앱입니다. 이 페이지에서는 앱이 어떤 정보를 어떻게 사용하는지 설명합니다.</p>
+    <p class="summary"><strong>요약:</strong> 영상과 프로젝트는 사용자의 iPhone에 저장됩니다. Take3에는 계정이 없고, 광고를 표시하지 않으며, 사용자를 추적하지 않고, 데이터를 판매하지 않습니다.</p>
+
+    <h3>기기에 저장되는 정보</h3>
+    <p>테이크(영상), 썸네일, 프로젝트, 오디오 트랙, 텍스트, 필터, 설정은 사용자의 iPhone에만 저장됩니다. 이 콘텐츠를 당사 서버에 업로드하지 않으며 당사는 이에 접근할 수 없습니다. 앱을 삭제하면 이 데이터도 삭제됩니다. Apple의 iPhone 백업을 사용하는 경우 해당 백업에는 Apple의 규정이 적용됩니다.</p>
+
+    <h3>앱이 요청하는 권한</h3>
+    <ul>
+      <li><strong>카메라 및 마이크:</strong> 테이크를 소리와 함께 녹화하기 위해.</li>
+      <li><strong>사진:</strong> 라이브러리에서 영상을 가져오기 위해(Pro 기능).</li>
+      <li><strong>위치(앱 사용 중):</strong> 테이크를 촬영한 장소를 저장하기 위해. 위치는 테이크와 함께 사용자의 기기에 저장되며 당사로 전송되지 않습니다.</li>
+      <li><strong>알림:</strong> 기기 자체에서 예약되는 미리 알림과 알림(매일 녹화 알림, 곧 만료되는 테이크, 무료 체험 종료 등). 서버에서 보내는 알림은 사용하지 않습니다.</li>
+    </ul>
+    <p>권한은 언제든지 iPhone 설정에서 철회할 수 있습니다.</p>
+
+    <h3>Take3 Pro 구독</h3>
+    <p>구매는 Apple이 App Store를 통해 처리하고 결제합니다. 구독이 활성 상태인지 확인하기 위해 제3자 서비스인 RevenueCat을 사용합니다. RevenueCat은 구독 상태와 이력 같은 구매 정보를 앱이 생성한 익명 식별자와 연결하여 받으며, 이름이나 이메일은 포함되지 않습니다. RevenueCat 정책은 <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>에서 확인할 수 있습니다. 당사는 결제 정보에 접근할 수 없습니다.</p>
+
+    <h3>당사가 하지 않는 일</h3>
+    <p>광고 없음, 앱이나 웹사이트 간 추적 없음, 사용 분석 도구 없음, 광고 목적의 데이터 판매 또는 공유 없음.</p>
+
+    <h3>아동</h3>
+    <p>Take3는 13세 미만 아동을 대상으로 하지 않으며 아동의 데이터를 의도적으로 수집하지 않습니다.</p>
+
+    <h3>데이터 및 삭제</h3>
+    <p>콘텐츠는 사용자의 기기에 저장되므로 직접 관리할 수 있습니다. 앱에서 테이크와 프로젝트를 삭제하거나 앱 자체를 삭제할 수 있습니다. 구매 데이터에 관한 문의는 아래 지원 이메일로 보내 주세요.</p>
+
+    <h3>이 방침의 변경</h3>
+    <p>이 방침이 변경되면 갱신된 날짜와 함께 새 버전을 이곳에 게시합니다.</p>
+
+    <h2>지원</h2>
+    <p>문의, 문제, 제안: <a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a></p>
+    <ul>
+      <li><strong>구독 해지:</strong> iPhone 설정 → 사용자 이름 → 구독 → Take3 Pro.</li>
+      <li><strong>구매 복원:</strong> 앱의 Take3 Pro 화면에서 “복원”를 누르세요.</li>
+    </ul>
+    <p class="muted">이용약관: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 표준 라이선스 계약</a></p>
+  </section>
+
+  <section class="lang-section" id="zh-Hans" lang="zh-Hans">
+    <h2>隐私政策</h2>
+    <p class="muted">最后更新：2026年11月5日</p>
+    <p>Take3 是一款以短 Take 为核心的 vlog 应用。本页说明应用使用哪些信息以及如何使用。</p>
+    <p class="summary"><strong>摘要：</strong> 你的视频和项目保存在你的 iPhone 上。Take3 没有账号，不投放广告，不跟踪你，也不出售数据。</p>
+
+    <h3>保存在你设备上的内容</h3>
+    <p>Take（视频）、缩略图、项目、音频轨道、文字、滤镜和设置仅存储在你的 iPhone 上。我们不会把这些内容上传到我们的任何服务器，也无法访问它们。删除应用即会删除这些数据。如果你使用 Apple 的 iPhone 备份，则适用 Apple 的规则。</p>
+
+    <h3>应用请求的权限</h3>
+    <ul>
+      <li><strong>相机和麦克风：</strong>用于录制带声音的 Take。</li>
+      <li><strong>照片：</strong>用于从你的资料库导入视频（Pro 功能）。</li>
+      <li><strong>位置（使用应用期间）：</strong>用于保存 Take 的拍摄地点。位置会与 Take 一起保存在你的设备上，不会发送给我们。</li>
+      <li><strong>通知：</strong>在设备本地安排的提醒和提示，例如每日录制提醒、即将到期的 Take 以及免费试用结束提醒。我们不使用由服务器发送的通知。</li>
+    </ul>
+    <p>你可以随时在 iPhone 的“设置”中撤销任何权限。</p>
+
+    <h3>Take3 Pro 订阅</h3>
+    <p>购买由 Apple 通过 App Store 处理并收费。我们使用第三方服务 RevenueCat 来确认你的订阅是否有效。RevenueCat 会收到与购买相关的信息（如订阅状态和历史），并与应用生成的匿名标识符关联，不包含你的姓名或电子邮件。RevenueCat 的政策请见 <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>。我们无法访问你的付款信息。</p>
+
+    <h3>我们不会做的事</h3>
+    <p>没有广告，不跨应用或网站跟踪，不使用使用情况分析工具，也不为广告目的出售或共享数据。</p>
+
+    <h3>儿童</h3>
+    <p>Take3 不面向 13 岁以下的儿童，也不会有意收集他们的数据。</p>
+
+    <h3>你的数据与删除</h3>
+    <p>由于你的内容保存在你的设备上，因此由你自己掌控：你可以在应用中删除 Take 和项目，也可以删除应用本身。如对购买数据有疑问，请发送电子邮件至下方的支持邮箱。</p>
+
+    <h3>本政策的变更</h3>
+    <p>如果本政策有变更，我们会在此发布新版本并更新日期。</p>
+
+    <h2>支持</h2>
+    <p>有问题、遇到故障或有建议：<a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a></p>
+    <ul>
+      <li><strong>取消订阅：</strong>iPhone“设置” → 你的姓名 → 订阅 → Take3 Pro。</li>
+      <li><strong>恢复购买：</strong>在应用的 Take3 Pro 页面中点按“恢复”。</li>
+    </ul>
+    <p class="muted">使用条款：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 标准许可协议</a></p>
+  </section>
+
+  <section class="lang-section" id="zh-Hant" lang="zh-Hant">
+    <h2>隱私權政策</h2>
+    <p class="muted">最後更新：2026年11月5日</p>
+    <p>Take3 是一款以短 Take 為核心的 vlog App。本頁說明 App 使用哪些資訊，以及如何使用。</p>
+    <p class="summary"><strong>摘要：</strong> 你的影片和專案儲存在你的 iPhone 上。Take3 沒有帳號、不投放廣告、不追蹤你，也不出售資料。</p>
+
+    <h3>儲存在你裝置上的內容</h3>
+    <p>Take（影片）、縮圖、專案、音訊軌、文字、濾鏡和設定僅儲存在你的 iPhone 上。我們不會把這些內容上傳到我們的任何伺服器，也無法存取。刪除 App 就會刪除這些資料。如果你使用 Apple 的 iPhone 備份，則適用 Apple 的規定。</p>
+
+    <h3>App 要求的權限</h3>
+    <ul>
+      <li><strong>相機與麥克風：</strong>用於錄製帶有聲音的 Take。</li>
+      <li><strong>照片：</strong>用於從你的資料庫匯入影片（Pro 功能）。</li>
+      <li><strong>位置（使用 App 期間）：</strong>用於儲存 Take 的拍攝地點。位置會與 Take 一起儲存在你的裝置上，不會傳送給我們。</li>
+      <li><strong>通知：</strong>在裝置本機排程的提醒與通知，例如每日錄製提醒、即將到期的 Take，以及免費試用結束提醒。我們不使用由伺服器傳送的通知。</li>
+    </ul>
+    <p>你可以隨時在 iPhone 的「設定」中撤銷任何權限。</p>
+
+    <h3>Take3 Pro 訂閱</h3>
+    <p>購買由 Apple 透過 App Store 處理並收費。我們使用第三方服務 RevenueCat 來確認你的訂閱是否有效。RevenueCat 會收到與購買相關的資訊（例如訂閱狀態與紀錄），並與 App 產生的匿名識別碼關聯，不包含你的姓名或電子郵件。RevenueCat 的政策請見 <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>。我們無法存取你的付款資料。</p>
+
+    <h3>我們不會做的事</h3>
+    <p>沒有廣告、不跨 App 或網站追蹤、不使用使用情況分析工具，也不為廣告目的出售或分享資料。</p>
+
+    <h3>兒童</h3>
+    <p>Take3 並非針對 13 歲以下兒童，也不會刻意蒐集他們的資料。</p>
+
+    <h3>你的資料與刪除</h3>
+    <p>由於你的內容儲存在你的裝置上，因此由你自己掌控：你可以在 App 中刪除 Take 和專案，也可以刪除 App 本身。如對購買資料有疑問，請寄電子郵件至下方的支援信箱。</p>
+
+    <h3>本政策的變更</h3>
+    <p>如果本政策有所變更，我們會在此發布新版本並更新日期。</p>
+
+    <h2>支援</h2>
+    <p>有問題、遇到狀況或有建議：<a href="mailto:davis.lira08@gmail.com">davis.lira08@gmail.com</a></p>
+    <ul>
+      <li><strong>取消訂閱：</strong>iPhone「設定」→ 你的名稱 →「訂閱」→ Take3 Pro。</li>
+      <li><strong>回復購買：</strong>在 App 的 Take3 Pro 畫面中點一下「回復」。</li>
+    </ul>
+    <p class="muted">使用條款：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 標準授權協議</a></p>
+  </section>
 </main>
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
+  var codes = ["pt-BR", "en", "es", "fr", "de", "ja", "ko", "zh-Hans", "zh-Hant"];
+  var sections = document.querySelectorAll('.lang-section');
+  var links = document.querySelectorAll('nav.langs a');
+
+  // Idioma do navegador -> uma das 9 línguas do app (inglês quando nenhuma bate).
+  function fromBrowser() {
+    var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+    for (var i = 0; i < prefs.length; i++) {
+      var l = String(prefs[i]).toLowerCase();
+      if (l.indexOf('zh') === 0) return /hant|-tw|-hk|-mo/.test(l) ? 'zh-Hant' : 'zh-Hans';
+      var base = l.split('-')[0];
+      if (base === 'pt') return 'pt-BR';
+      if (codes.indexOf(base) !== -1) return base;
+    }
+    return 'en';
+  }
+
+  function show(code) {
+    if (codes.indexOf(code) === -1) code = 'en';
+    sections.forEach(function (s) { s.classList.toggle('active', s.id === code); });
+    links.forEach(function (a) { a.classList.toggle('active', a.dataset.lang === code); });
+    root.lang = code;
+  }
+
+  function fromHash() { return decodeURIComponent(location.hash.replace('#', '')); }
+  window.addEventListener('hashchange', function () { show(fromHash()); window.scrollTo(0, 0); });
+  show(codes.indexOf(fromHash()) !== -1 ? fromHash() : fromBrowser());
+})();
+</script>
 </body>
 </html>
